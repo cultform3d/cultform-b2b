@@ -35,7 +35,7 @@ jobs:
 
       - name: Build static site
         env:
-          NEXT_PUBLIC_BASE_PATH: /cultform-b2b
+          NEXT_PUBLIC_BASE_PATH: ""
         run: |
           npm run build
           touch out/.nojekyll
