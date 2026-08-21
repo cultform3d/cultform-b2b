@@ -49,8 +49,8 @@ export default function CultformInvestorLanding() {
     setPrinters(num / 1000)
   }
 
-  // Financial calculations (4-6% monthly range, average 5% monthly = 60% annual)
-  const avgMonthlyRate = 0.05 // 5% average
+  // Financial calculations (4-8% monthly range, average 6% monthly = 72% annual)
+  const avgMonthlyRate = 0.06 // 6% average
   let monthlyIncome = printers * 1000 * avgMonthlyRate
   let annualIncome = monthlyIncome * 12
   
@@ -158,7 +158,7 @@ export default function CultformInvestorLanding() {
             </h1>
 
             <p className="text-lg md:text-xl text-foreground/80 font-light leading-relaxed max-w-2xl">
-              Приобретите ферму 3D-принтеров под ключ за <strong className="text-white font-semibold">$1000</strong> и получайте пассивный доход <strong className="text-neon-green font-semibold">4–6% в месяц (в среднем ~60% годовых)</strong>, обеспеченный B2B-контрактами на 3D-печать корпусов РЭА и приборов для КБ и R&D предприятий.
+              Приобретите ферму 3D-принтеров под ключ за <strong className="text-white font-semibold">$1000</strong> и получайте пассивный доход <strong className="text-neon-green font-semibold">4–8% в месяц (в среднем ~72% годовых)</strong>, обеспеченный B2B-контрактами на 3D-печать корпусов РЭА и приборов для КБ и R&D предприятий.
             </p>
 
             {/* Key stats row */}
@@ -168,7 +168,7 @@ export default function CultformInvestorLanding() {
                 <div className="text-xs text-muted mt-1">Шаг входа (1 модуль)</div>
               </div>
               <div className="p-4 rounded-2xl bg-surface/80 border border-white/10 backdrop-blur-sm">
-                <div className="text-2xl md:text-3xl font-bold text-neon-green">4–6% / мес</div>
+                <div className="text-2xl md:text-3xl font-bold text-neon-green">4–8% / мес</div>
                 <div className="text-xs text-muted mt-1">Доходность аренды</div>
               </div>
               <div className="p-4 rounded-2xl bg-surface/80 border border-white/10 backdrop-blur-sm">
@@ -275,8 +275,8 @@ export default function CultformInvestorLanding() {
               },
               {
                 step: "04",
-                title: "Выплаты 4–6% в месяц",
-                text: "Ежемесячно с 1-го по 10-е число вы получаете арендную плату (в диапазоне 4–6% в месяц).",
+                title: "Выплаты 4–8% в месяц",
+                text: "Ежемесячно с 1-го по 10-е число вы получаете арендную плату (в диапазоне 4–8% в месяц).",
                 color: "text-neon-yellow",
                 borderColor: "border-neon-yellow/30",
                 bgHover: "hover:bg-neon-yellow/5"
@@ -315,9 +315,9 @@ export default function CultformInvestorLanding() {
               <div className="w-12 h-12 rounded-2xl bg-neon-purple/20 flex items-center justify-center text-neon-purple mb-6">
                 <TrendingUp className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-white">Доходность 4–6% в месяц</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">Доходность 4–8% в месяц</h3>
               <p className="text-muted leading-relaxed text-sm md:text-base">
-                Приобретенная ферма 3D-принтеров под ключ за <span className="text-neon-purple font-semibold">$1000</span> обеспечивает доход <span className="text-neon-purple font-semibold">4–6% в месяц</span> (в среднем ~60% годовых). Доход формируется от реализационной маржи корпусных изделий.
+                Приобретенная ферма 3D-принтеров под ключ за <span className="text-neon-purple font-semibold">$1000</span> обеспечивает доход <span className="text-neon-purple font-semibold">4–8% в месяц</span> (в среднем ~72% годовых). Доход формируется от реализационной маржи корпусных изделий.
               </p>
             </div>
 
@@ -579,9 +579,9 @@ export default function CultformInvestorLanding() {
                   <PieChart className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Доходность 4–6% в месяц</h4>
+                  <h4 className="text-sm font-semibold text-white">Доходность 4–8% в месяц</h4>
                   <p className="text-xs text-muted leading-relaxed mt-0.5">
-                    Доходность варьируется от 4% до 6% в месяц в зависимости от загрузки производственных линий B2B-заказами.
+                    Доходность варьируется от 4% до 8% в месяц в зависимости от загрузки производственных линий B2B-заказами.
                   </p>
                 </div>
               </div>
@@ -640,12 +640,12 @@ export default function CultformInvestorLanding() {
               <div className="grid md:grid-cols-2 gap-6 pt-2">
                 <div className="p-6 rounded-2xl bg-background/90 border border-white/10 border-l-4 border-l-neon-purple">
                   <span className="text-xs text-muted tracking-widest uppercase block mb-2">
-                    {reinvest ? 'Средний доход в месяц' : 'Ежемесячный доход (при 5% средн.)'}
+                    {reinvest ? 'Средний доход в месяц' : 'Ежемесячный доход (при 6% средн.)'}
                   </span>
                   <div className="text-4xl font-bold text-neon-purple tabular-nums">
                     ${monthlyIncome.toFixed(0)}
                   </div>
-                  <span className="text-xs text-muted mt-1 block">диапазон выплат 4–6%/мес</span>
+                  <span className="text-xs text-muted mt-1 block">диапазон выплат 4–8%/мес</span>
                 </div>
 
                 <div className="p-6 rounded-2xl bg-background/90 border border-white/10 border-l-4 border-l-neon-purple">
@@ -655,7 +655,7 @@ export default function CultformInvestorLanding() {
                   <div className="text-4xl font-bold text-neon-purple tabular-nums">
                     ${annualIncome.toFixed(0)}
                   </div>
-                  <span className="text-xs text-muted mt-1 block">доходность ~60% годовых</span>
+                  <span className="text-xs text-muted mt-1 block">доходность ~72% годовых</span>
                 </div>
               </div>
 
